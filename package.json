@@ -1,0 +1,34 @@
+{
+  "name": "my_node_server",
+  "version": "1.0.0",
+  "description": "my node server with b4w",
+  "main": "server.js",
+  "dependencies": {
+    "cookie-session": "^2.0.0-alpha.1",
+    "morgan": "^1.7.0",
+    "serve-static": "^1.10.2",
+    "socket.io": "^1.4.5",
+    "serve-favicon": "^2.3.0",
+    "cookie-parser": "^1.4.1",
+    "connect": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoxKeini/myb4w.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blend4web"
+  ],
+  "author": "NoxKeini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoxKeini/myb4w/issues"
+  },
+  "homepage": "https://github.com/NoxKeini/myb4w#readme"
+}
