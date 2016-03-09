@@ -40,11 +40,11 @@ exports.enable_object_controls = function(obj) {
                 //m_anim.apply(_character_rig, "character_run");
                 break;
             case "LEFT":
-                var move_dir1 = -1;
+                var move_dir1 = 1;
                 //m_anim.apply(_character_rig, "character_run");
                 break;
             case "RIGHT":
-                var move_dir1 = 1;
+                var move_dir1 = -1;
                 //m_anim.apply(_character_rig, "character_run");
                 break;  
             }    
@@ -54,7 +54,7 @@ exports.enable_object_controls = function(obj) {
             //m_anim.apply(_character_rig, "character_idle_01");
         }
 
-        m_phy.set_character_move_dir(obj, 10*move_dir, 0);
+        m_phy.set_character_move_dir(obj, move_dir, move_dir1);
 
         //m_anim.play(_character_rig);
         //m_anim.set_behavior(_character_rig, m_anim.AB_CYCLIC);
@@ -64,9 +64,9 @@ exports.enable_object_controls = function(obj) {
         move_array, forward_logic, move_cb);
     m_ctl.create_sensor_manifold(obj, "BACKWARD", m_ctl.CT_TRIGGER,
         move_array, backward_logic, move_cb);
-    /*m_ctl.create_sensor_manifold(obj, "LEFT", m_ctl.CT_TRIGGER,
-        move_array, forward_logic, move_cb);
+    m_ctl.create_sensor_manifold(obj, "LEFT", m_ctl.CT_TRIGGER,
+        move_array, left_logic, move_cb);
     m_ctl.create_sensor_manifold(obj, "RIGHT", m_ctl.CT_TRIGGER,
-        move_array, backward_logic, move_cb);*/    
+        move_array, right_logic, move_cb);   
 }
 });
