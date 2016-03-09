@@ -4,13 +4,15 @@
   "description": "my node server with b4w",
   "main": "server.js",
   "dependencies": {
+    "connect": "^3.4.1",
+    "cookie-parser": "^1.4.1",
     "cookie-session": "^2.0.0-alpha.1",
     "morgan": "^1.7.0",
-    "serve-static": "^1.10.2",
-    "socket.io": "^1.4.5",
+    "pg": "^4.5.1",
+    "sequelize": "^3.19.3",
     "serve-favicon": "^2.3.0",
-    "cookie-parser": "^1.4.1",
-    "connect": "^3.4.1"
+    "serve-static": "^1.10.2",
+    "socket.io": "^1.4.5"
   },
   "devDependencies": {},
   "scripts": {
